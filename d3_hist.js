@@ -40,7 +40,16 @@ d3.csv("https://raw.githubusercontent.com/Macchiato0/Pyworkflow/master/acc_dist1
       y.domain([0, d3.max(bins, function(d) { return d.length; })]);   // d3.hist has to be called before the Y axis obviously
   svg.append("g")
       .call(d3.axisLeft(y));
-
+  // get legend of total counts
+    
+  var tot=298931  
+  svg
+    .append("text")
+    .attr("x", x(0.4))
+    .attr("y", y(900))
+    .text("counts of sp = "+String(tot))
+    .style("font-size", "15px")
+    
   // append the bar rectangles to the svg element
   svg.selectAll("rect")
       .data(bins)
