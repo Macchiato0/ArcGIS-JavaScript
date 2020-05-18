@@ -1,10 +1,6 @@
-//check if input contain a substring 'pos'
+//check amp of every switch
 /*
-if (pos==true){
-find "(" [return the index of "("]
-find ")" [return the index of ")"]
-return the string between "(" and ")"
-}
+if i in ["200A","300A","500A","100A","600A","1000A","1200","1500A","1600A","2000A","3000A","00A"]
 
 */
 
