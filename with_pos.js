@@ -8,7 +8,7 @@ return the string between "(" and ")"
 
 */
 
-function within(input) {
+function with_pos(input) {
   var kw="POS"
   var str = String(input);
   var res = str.toUpperCase();
