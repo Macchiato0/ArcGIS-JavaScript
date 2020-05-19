@@ -10,9 +10,9 @@ function find_amp(input) {
   var res = str.toUpperCase();
   
   for (i = 0; i < kws.length; i++) { 
-  var boo = res.includes(i);
+  var boo = res.includes(kws[i]);
   if (boo==true){ 
-  return i;}
+       return kws[i];}
   }
   return 0
 }
